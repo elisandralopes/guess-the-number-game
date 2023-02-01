@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <img class="background" src="/background.jpg" />
+    <div class="page-container">
+      <div class="container-title">
+        <h1 class="page-title">Adivinhe o número secreto 😉</h1>
+
+        <img
+          src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg"
+          class="page-logo"
+          alt=""
+        />
+      </div>
+
+      <div class="container-game">
+        <h3>Tente advinhar o número secreto</h3>
+
+        <form class="form">
+          <input
+            type="text"
+            id="jogadaInput"
+            placeholder="Digite um número de 1 a 1000"
+          />
+          <button type="submit" id="convertButton">Jogar</button>
+        </form>
+
+        <div id="result"></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

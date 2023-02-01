@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #000000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: 100vh;
+}
+
+.background {
+  height: auto;
+  width: 100%;
+  z-index: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  filter: blur(20px);
+}
+
+.page-container {
+  margin: auto;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.page-container * {
+  z-index: 2;
+}
+
+.container-title {
+  text-align: center;
+  padding: 20px;
+  margin-top: 56px; /*aumentar??? */
+}
+
+.page-title {
+  margin: 0 0 5px;
+  font-size: 45px;
+
+  font-weight: 700;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.container-game {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /*board*/
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  width: 100%;
+  max-width: 50%;
+
+  /*padding-top: 25px;
+  padding-bottom: 55px;*/
+  padding: 50px 40px 70px;
+  margin: auto;
+  gap: 12px;
+}
+
+.container-game h3 {
+  font-weight: normal;
+  font-size: 35px;
+}
+
+input {
+  width: 300px;
+  height: 35px;
+  font-size: 18px;
+  padding: 10px;
+
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  padding: 4px 10px;
+
+  border-radius: 8px;
+  border: none;
+
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #e1d0ed;
+
+  margin-left: 4px;
+}
+
+button:hover {
+  background-color: #d2aeeb;
+}
+
+button:active {
+  background-color: rgb(235, 198, 248);
+}
+
+#result {
+  font-weight: 700;
+  font-size: 25px;
+
+  white-space: pre; /*permitir a quebra de linha */
+}
