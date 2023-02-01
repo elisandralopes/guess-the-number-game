@@ -43,7 +43,7 @@ convertButton.addEventListener('click', function () {
         'O número secreto era ' +
         secretNumber +
         '.\n' +
-        'Regarregue a página e tente novamente 😉';
+        'Regarregue a página e tente advinhar o próximo número secreto 😉';
     }
   } else if (numeroJogado < secretNumber) {
     tentativas -= 1;
@@ -64,7 +64,7 @@ convertButton.addEventListener('click', function () {
         'O número secreto era ' +
         secretNumber +
         '.\n' +
-        'Regarregue a página e tente novamente 😉';
+        'Regarregue a página e tente advinhar o próximo número secreto 😉';
     }
   }
   //resetar o campo de input a cada jogada ''(string vazia)
